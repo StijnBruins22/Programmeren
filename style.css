@@ -1,0 +1,63 @@
+/* Stelt de basisstijlen in voor de hele pagina */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ADD8E6; /* Achtergrondkleur van de pagina */
+}
+
+/* Stelt de opmaak in voor het hoofdcontainer van het huisdierspel */
+#pet-container {
+    text-align: center; /* Centreert de inhoud van het container */
+}
+
+/* Stelt de opmaak in voor de balk die het niveau van het huisdier aangeeft */
+#level-bar {
+    width: 300px;
+    height: 20px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* Stelt de opmaak in voor de voortgangsbalk van het niveau van het huisdier */
+#level-progress {
+    height: 100%;
+    width: 0;
+    background-color: #3498db; /* Kleur van de voortgangsbalk */
+    transition: width 1s ease-out; /* Voegt een overgang toe aan de breedte van de balk */
+}
+
+/* Stelt de opmaak in voor de afbeeldingen van het huisdier */
+.pet-image {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#happyPet, #sadPet {
+    display: none;
+}
+
+
+/* Stelt de opmaak in voor de knoppen sectie */
+#buttons {
+    margin-top: 10px; /* Ruimte boven de knoppen */
+}
+
+/* Stelt de basisstijlen in voor alle knoppen */
+button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+/* Stelt de opmaak in voor de paragrafen die het geluk en niveau van het huisdier aangeven */
+#happiness, #level {
+    font-size: 18px;
+}

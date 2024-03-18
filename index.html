@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huisdier Spel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+</head>
+
+<body>
+    <div id="pet-container">
+        <div id="level-bar">
+            <div id="level-progress"></div>
+        </div>
+        <div id="pet-images">
+            <img id="neutralPet" class="pet-image" src="images/neutral_pet.png" alt="Neutral Pet">
+            <img id="happyPet" class="pet-image" src="images/happy_pet.png" alt="Happy Pet">
+            <img id="sadPet" class="pet-image" src="images/sad_pet.png" alt="Sad Pet">
+        </div>
+        <div id="buttons">
+            <button id="feedButton">Feed</button>
+            <button id="playButton">Play</button>
+        </div>
+        <p id="happiness">Happiness: <span id="happinessValue">50</span></p>
+        <p id="level">Level: <span id="levelValue">1</span></p>
+    </div>
+</body>
+</html>
