@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Start de timer bij het laden van de pagina
     startTimer();
 
-    // Voer de decreaseHappiness-functie uit op een vast interval
+    // Voer de verminderGeluk-functie uit op een vast interval
     const gelukInterval = setInterval(verminderGeluk, 2000); // Verlaag de intervaltijd naar 2 seconden
 
     // Voeg event listeners toe aan de voed- en speelknoppen
