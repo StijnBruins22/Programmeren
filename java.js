@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let niveau = 1;
     let timerSeconden = 0;
 
-    // Voedsel en speelgoed arrays
+    // Voedsel en speelgoed arrays 
     const voedselItems = ["appel", "kaas", "vis"];
     const speelgoedItems = ["bal", "touw", "muis"];
 
