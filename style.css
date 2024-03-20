@@ -10,12 +10,12 @@ body {
 }
 
 /* Stelt de opmaak in voor het hoofdcontainer van het huisdierspel */
-#pet-container {
+#huisdier-container {
     text-align: center; /* Centreert de inhoud van het container */
 }
 
 /* Stelt de opmaak in voor de balk die het niveau van het huisdier aangeeft */
-#level-bar {
+#niveau-balk {
     width: 300px;
     height: 20px;
     border: 1px solid #333;
@@ -24,7 +24,7 @@ body {
 }
 
 /* Stelt de opmaak in voor de voortgangsbalk van het niveau van het huisdier */
-#level-progress {
+#niveau-voortgang {
     height: 100%;
     width: 0;
     background-color: #3498db; /* Kleur van de voortgangsbalk */
@@ -32,7 +32,7 @@ body {
 }
 
 /* Stelt de opmaak in voor de afbeeldingen van het huisdier */
-.pet-image {
+.huisdier-afbeelding {
     width: 150px;
     height: 150px;
     margin: 5px;
@@ -40,13 +40,13 @@ body {
     margin-right: auto;
 }
 
-#happyPet, #sadPet {
+#blijHuisdier, #verdrietigHuisdier {
     display: none;
 }
 
 
 /* Stelt de opmaak in voor de knoppen sectie */
-#buttons {
+#knoppen {
     margin-top: 10px; /* Ruimte boven de knoppen */
 }
 
@@ -58,6 +58,7 @@ button {
 }
 
 /* Stelt de opmaak in voor de paragrafen die het geluk en niveau van het huisdier aangeven */
-#happiness, #level {
+#geluk, #niveau {
     font-size: 18px;
 }
+
