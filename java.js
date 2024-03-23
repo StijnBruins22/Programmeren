@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Bereken de verstreken tijd
     function berekenVerstrekenTijd() {
         const huidigeTijd = Date.now();
-        verstrekenTijd = Math.floor((huidigeTijd - startTijd) / 1000); // Omzetten naar seconden
+        verstrekenTijd = Math.floor((huidigeTijd - startTijd) / 1000); 
         return verstrekenTijd;
     }
 
@@ -110,16 +110,16 @@ document.addEventListener("DOMContentLoaded", function () {
     function niveauOmhoog() {
         niveau++;
         niveauWaarde.textContent = niveau;
-        geluk = 50; // Reset het geluk na het stijgen naar een nieuw niveau
+        geluk = 50; 
 
-        // Geluid afspelen bij level up
+        // Geluid afspelen bij level up (Via YouTube geleerd)
         const levelOmhoogGeluid = new Audio('audio/levelup.mp3');
         levelOmhoogGeluid.play();
     }
 
-    // Werk de niveauvoortgangsbalk bij op basis van het geluksniveau
+    // Werk de niveauvoortgangsbalk bij (Laatste regel met behulp van ChatGPT)
     function updateNiveauBalk() {
-        if (niveauVoortgang) { // Controleer of niveauVoortgang is gedefinieerd
+        if (niveauVoortgang) { 
             const voortgangBreedte = (geluk / 100) * 300;
             niveauVoortgang.style.width = `${voortgangBreedte}px`;
         }
@@ -127,8 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Verminder het geluksniveau van het huisdier na verloop van tijd
     function verminderGeluk() {
-        // Verhoog dit getal om de geluksmeter sneller te laten afnemen
-        const willekeurigeAfname = Math.floor(Math.random() * 10) + 1; // bijvoorbeeld 10 in plaats van 5
+        const willekeurigeAfname = Math.floor(Math.random() * 10) + 1; 
         geluk -= willekeurigeAfname;
         geluk = Math.max(geluk, 0);
         updateGeluk();
@@ -141,19 +140,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const gelukInterval = setInterval(verminderGeluk, 2000); // Verlaag de intervaltijd naar 2 seconden
 
     // Voeg event listeners toe aan de voed- en speelknoppen
-    if (voedKnop) { // Controleer of voedKnop is gedefinieerd
+    if (voedKnop) { 
         voedKnop.addEventListener("click", function () {
             voerHuisdier(voedselItems);
         });
     }
-    if (speelKnop) { // Controleer of speelKnop is gedefinieerd
+    if (speelKnop) { 
         speelKnop.addEventListener("click", function () {
             speelMetHuisdier(speelgoedItems);
         });
     }
 });
 
-// Formatteer de verstreken tijd naar mm:ss formaat
+// Formatteer de verstreken tijd naar mm:ss formaat (Dit heb ik met behulp van ChatGPT gedaan)
 function formatteerTijd(seconden) {
     const minuten = Math.floor(seconden / 60);
     const resterendeSeconden = seconden % 60;
